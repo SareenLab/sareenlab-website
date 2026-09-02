@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const socialLinks = [
   {
@@ -70,9 +71,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           {/* Brand col */}
           <div className="col-span-1">
-            <Link href="/" className="font-display font-semibold text-2xl tracking-tight">
-              <span className="text-text-primary">SAREEN</span>
-              <span className="text-accent">LAB</span>
+            <Link href="/" className="flex items-center">
+              <Image
+                src="/logo-dark.svg"
+                alt="Sareen Lab"
+                height={36}
+                width={161}
+                style={{ height: "36px", width: "auto" }}
+              />
             </Link>
             <p className="mt-4 text-sm text-text-muted leading-relaxed max-w-xs">
               Accelerating clinical translation with iPSC technology — at scale and at speed.
