@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 const navLinks = [
@@ -35,9 +36,15 @@ export default function Navbar() {
     >
       <nav className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-0 font-display font-semibold text-xl tracking-tight">
-          <span className="text-text-primary">SAREEN</span>
-          <span className="text-accent">LAB</span>
+        <Link href="/" className="flex items-center">
+          <Image
+            src="/logo-dark.svg"
+            alt="Sareen Lab"
+            height={40}
+            width={179}
+            style={{ height: "40px", width: "auto" }}
+            priority
+          />
         </Link>
 
         {/* Desktop nav */}

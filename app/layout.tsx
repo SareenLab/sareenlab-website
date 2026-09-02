@@ -17,6 +17,7 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://sareenlab.com"),
   title: {
     default: "Sareen Lab — iPSC Platforms · Cell & Gene Therapies · Regenerative Medicine",
     template: "%s | Sareen Lab",
@@ -32,6 +33,17 @@ export const metadata: Metadata = {
     "Cedars-Sinai",
     "Dhruv Sareen",
   ],
+  icons: {
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
+      { url: "/icon-512.png", sizes: "512x512", type: "image/png" },
+    ],
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+  },
+  manifest: "/manifest.webmanifest",
   openGraph: {
     type: "website",
     url: "https://sareenlab.com",
@@ -39,11 +51,20 @@ export const metadata: Metadata = {
     description:
       "Building next-generation cell and gene therapy platforms, gene-edited living medicines, and autonomous biomanufacturing systems that accelerate clinical translation — at scale and at speed — with iPSC technology at the core.",
     siteName: "Sareen Lab",
+    images: [
+      {
+        url: "https://sareenlab.com/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Sareen Lab",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Sareen Lab",
     description: "Engineering the next generation of living medicines.",
+    images: ["https://sareenlab.com/opengraph-image"],
   },
 };
 
