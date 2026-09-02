@@ -1,0 +1,36 @@
+---
+title: "Field Notes: Scaling Islet Differentiation Past the 1L Barrier"
+date: "2025-09-22"
+type: "field-notes"
+excerpt: "Notes from the bench on what actually breaks when you move iPSC-to-islet differentiation from 125mL spinner flasks to stirred-tank bioreactors — and what we did about it."
+readTime: "6 min read"
+featured: false
+---
+
+Scale-up in cell manufacturing is never linear. Everyone knows this abstractly. Fewer people have lived through the specific failure modes of moving an islet differentiation protocol from a 125mL spinner flask to a 1L stirred-tank bioreactor.
+
+These are notes from that process.
+
+## What Breaks First: Shear Stress
+
+The first casualty of scale-up is almost always aggregate integrity. At small scale, gentle agitation in a spinner flask creates a predictable, low-shear environment. In a stirred-tank system, even at equivalent impeller speeds, the shear profile is fundamentally different.
+
+Our first 1L runs produced islet-like clusters with acceptable endocrine marker expression but dramatically reduced insulin secretion in glucose-stimulated insulin secretion (GSIS) assays. The clusters looked right. They didn't function right.
+
+The culprit: mechanical disruption of the tight cell-cell contacts that beta cell maturation requires.
+
+## The Fix: Impeller Geometry and Stage-Specific Agitation
+
+The solution wasn't a single change — it was a redesign of the agitation profile at each differentiation stage.
+
+Early stages (definitive endoderm, primitive gut tube) tolerate higher shear. Later stages — particularly the islet maturation phase — require dramatically lower agitation. We now run a staged agitation protocol that drops impeller speed by ~40% during the final maturation window.
+
+Combined with a switch to a pitched-blade impeller configuration, GSIS recovery improved substantially compared to early scale-up attempts.
+
+## What We Still Don't Understand
+
+Oxygen gradients in larger vessels remain an open problem. Dissolved oxygen sensors give you a single-point reading; the actual DO profile across a 1L vessel during dense aggregate culture is heterogeneous in ways that are hard to characterize without expensive inline imaging.
+
+This is where the digital twin work becomes important. We're building computational models of the bioreactor environment specifically to address this blind spot.
+
+More in a future dispatch when we have cleaner data.
